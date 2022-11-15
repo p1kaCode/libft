@@ -6,7 +6,7 @@
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 15:51:04 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/15 18:58:59 by lmorel           ###   ########lyon.fr   */
+/*   Updated: 2022/11/15 22:47:33 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	unsigned int	i;
 	unsigned int	k;
 
+	if (!s1)
+		return (NULL);
 	size = ft_strlen(s1) - how_many_contains(s1, set);
 	p = malloc(size * sizeof(char) + 1);
 	if (p == NULL)
@@ -70,6 +72,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 		}
 		i++;
 	}
-	p[k] = 0;
+	p[k] = '\0';
 	return (p);
 }
