@@ -6,11 +6,11 @@
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 10:35:15 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/15 11:28:10 by lmorel           ###   ########lyon.fr   */
+/*   Updated: 2022/11/15 16:48:57 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_list.h"
 
 int	ft_lstsize(t_list *lst)
 {

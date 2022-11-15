@@ -6,11 +6,11 @@
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 17:39:21 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/15 10:52:42 by lmorel           ###   ########lyon.fr   */
+/*   Updated: 2022/11/15 16:18:05 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 char	*ft_reverse_str(char *str)
 {

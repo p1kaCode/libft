@@ -6,11 +6,11 @@
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/06 17:52:26 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/08 16:02:26 by lmorel           ###   ########lyon.fr   */
+/*   Updated: 2022/11/15 16:20:06 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {

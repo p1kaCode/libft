@@ -6,11 +6,11 @@
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 10:38:58 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/15 10:55:21 by lmorel           ###   ########lyon.fr   */
+/*   Updated: 2022/11/15 16:47:56 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_list.h"
 
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {

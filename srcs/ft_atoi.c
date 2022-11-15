@@ -6,11 +6,11 @@
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:38:23 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/15 10:47:53 by lmorel           ###   ########lyon.fr   */
+/*   Updated: 2022/11/15 16:15:50 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_atoi(const char *str)
 {

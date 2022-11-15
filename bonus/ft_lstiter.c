@@ -6,11 +6,11 @@
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 10:39:45 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/15 10:56:22 by lmorel           ###   ########lyon.fr   */
+/*   Updated: 2022/11/15 16:48:16 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_list.h"
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {

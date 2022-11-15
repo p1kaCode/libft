@@ -6,11 +6,11 @@
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 16:50:25 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/15 11:21:08 by lmorel           ###   ########lyon.fr   */
+/*   Updated: 2022/11/15 16:23:00 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 int	count_nb_words(const char *s, char c)
 {
@@ -33,7 +33,7 @@ int	count_nb_words(const char *s, char c)
 	return (nb_words);
 }
 
-char	**fill_tab(char const s, char c, char **strs)
+char	**fill_tab(char const *s, char c, char **strs)
 {
 	int	k;
 	int	i;

@@ -6,11 +6,11 @@
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:23:14 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/09 16:36:14 by lmorel           ###   ########lyon.fr   */
+/*   Updated: 2022/11/15 16:16:27 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

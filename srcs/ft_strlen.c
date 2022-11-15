@@ -6,11 +6,11 @@
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 13:33:14 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/15 11:04:20 by lmorel           ###   ########lyon.fr   */
+/*   Updated: 2022/11/15 16:20:22 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 size_t	ft_strlen(const char *s)
 {

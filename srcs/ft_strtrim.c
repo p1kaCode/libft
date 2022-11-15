@@ -6,11 +6,11 @@
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 15:51:04 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/15 11:03:32 by lmorel           ###   ########lyon.fr   */
+/*   Updated: 2022/11/15 16:21:21 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 int	how_many_contains(char const *s1, char const *set)
 {
