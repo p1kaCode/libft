@@ -1,39 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 15:38:23 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/15 18:07:12 by lmorel           ###   ########lyon.fr   */
+/*   Created: 2022/11/15 20:46:46 by lmorel            #+#    #+#             */
+/*   Updated: 2022/11/15 20:52:54 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-int	ft_atoi(const char *str)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	unsigned int	i;
-	int				sign;
-	int				res;
+	char	*p;
+	int		i;
 
+	p = malloc(sizeof(char) * ft_strlen(s) + 1);
+	if (!p)
+		return (NULL);
 	i = 0;
-	sign = 1;
-	while (!ft_isdigit(str[i]) && str[i] != '-'
-		&& str[i] != '+' && !ft_isalpha(str[i]))
-		i++;
-	if (str[i] == '-' || str[i] == '+')
+	while (s[i])
 	{
-		if (str[i] == '-')
-			sign = -1;
+		p[i] = f(i, s[i]);
 		i++;
 	}
-	res = 0;
-	while (ft_isdigit(str[i]))
-	{
-		res = res * 10 + str[i] - '0';
-		i++;
-	}
-	return (res * sign);
+	p[i] = 0;
+	return (p);
 }

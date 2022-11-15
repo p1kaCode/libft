@@ -6,7 +6,7 @@
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 14:22:12 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/15 16:21:09 by lmorel           ###   ########lyon.fr   */
+/*   Updated: 2022/11/15 18:39:19 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,22 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*p;
+	char	*found;
+	int		isfound;
 
-	p = NULL;
+	if (!c)
+		return ((char *)s + ft_strlen(s));
+	isfound = 0;
 	while (*s)
 	{
-		if (*s == (unsigned char)c)
-			p = (char *)s;
+		if (*s == (char)c)
+		{
+			found = (char *)s;
+			isfound = 1;
+		}
 		s++;
 	}
-	return (p);
+	if (isfound)
+		return (found);
+	return (NULL);
 }
