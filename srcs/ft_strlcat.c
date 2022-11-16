@@ -6,7 +6,7 @@
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 12:33:56 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/16 15:56:48 by lmorel           ###   ########lyon.fr   */
+/*   Updated: 2022/11/16 19:45:44 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t	to_add;
 
 	if (!dstsize)
-		return (0);
+		return (ft_strlen(src));
 	init_dest_size = ft_strlen(dst);
 	if (dstsize <= init_dest_size)
 		return (ft_strlen(src) + dstsize);
