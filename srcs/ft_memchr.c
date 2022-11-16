@@ -6,7 +6,7 @@
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 16:59:20 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/16 15:54:52 by lmorel           ###   ########lyon.fr   */
+/*   Updated: 2022/11/16 18:08:38 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*p;
 	unsigned char	*found;
 
