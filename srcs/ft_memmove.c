@@ -6,7 +6,7 @@
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 12:44:34 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/16 15:50:13 by lmorel           ###   ########lyon.fr   */
+/*   Updated: 2022/11/16 17:57:22 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	{
 		while (i < len)
 		{
-			b[i] = s[i];
+			d[i] = s[i];
 			i++;
 		}
 	}

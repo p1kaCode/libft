@@ -6,7 +6,7 @@
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 15:51:04 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/16 17:22:29 by lmorel           ###   ########lyon.fr   */
+/*   Updated: 2022/11/16 17:58:47 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ int	contains(char c, char const *set)
 
 int	size_chain_trimmed(char const *s1, char const *set)
 {
-	int	count;
-	int	i;
+	unsigned int	count;
+	unsigned int	i;
 
 	count = 0;
 	i = 0;
