@@ -6,7 +6,7 @@
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 15:19:18 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/15 21:23:51 by lmorel           ###   ########lyon.fr   */
+/*   Updated: 2022/11/16 16:55:04 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,29 +17,27 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	i;
 	char	*p;
 
-	if (!haystack || !*needle)
+	if (!*needle)
 		return ((char *)haystack);
 	if (!len)
 		return (NULL);
 	i = 0;
-	if (ft_strlen(needle) < len )
-		len = ft_strlen(needle);
 	p = (char *)haystack;
-	while (haystack[i])
+	while (haystack[i] && i < len)
 	{
-		if (!ft_strncmp(p, needle, len))
-			return ((char *)p);
-		p++;
+		if (haystack[i] == needle[0])
+		{
+			p = (char *)haystack;
+			j = 0;
+			while (haystack[i + j] == needle[j] && i + j < len)
+			{
+				if (!needle[j + 1])
+					return (p);
+				j++;
+			}
+			p = 0;
+		}
 		i++;
 	}
 	return (NULL);
-}
-
-int main()
-{
-	char haystack[] = "aaabcabcd";
-	char needle[] = "aabc";
-
-	printf("%s\n", ft_strnstr(haystack, "cd", 8));
-	printf("%s\n", strnstr(haystack, "cd", 8));
 }

@@ -6,7 +6,7 @@
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 16:50:25 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/15 16:23:00 by lmorel           ###   ########lyon.fr   */
+/*   Updated: 2022/11/16 17:51:51 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,8 @@ char	**ft_split(char const *s, char c)
 {
 	char	**strs;
 
+	if (!s)
+		return (NULL);
 	strs = malloc((count_nb_words(s, c) + 1) * sizeof(char *));
 	if (!strs)
 		return (NULL);

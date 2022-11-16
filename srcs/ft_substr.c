@@ -6,7 +6,7 @@
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 14:47:21 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/15 22:30:31 by lmorel           ###   ########lyon.fr   */
+/*   Updated: 2022/11/16 17:53:21 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*p;
 	size_t	tomalloc;
 
+	if (!s)
+		return (NULL);
 	if (start > ft_strlen(s))
 	{
 		p = malloc(sizeof(char) * 1);

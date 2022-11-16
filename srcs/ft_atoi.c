@@ -6,7 +6,7 @@
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:38:23 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/15 18:07:12 by lmorel           ###   ########lyon.fr   */
+/*   Updated: 2022/11/16 16:27:24 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,7 @@ int	ft_atoi(const char *str)
 
 	i = 0;
 	sign = 1;
-	while (!ft_isdigit(str[i]) && str[i] != '-'
-		&& str[i] != '+' && !ft_isalpha(str[i]))
+	while (str[i] == ' ' || (str[i] >= '\t' && str[i] <= '\r'))
 		i++;
 	if (str[i] == '-' || str[i] == '+')
 	{

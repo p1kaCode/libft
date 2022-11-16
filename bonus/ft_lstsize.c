@@ -6,7 +6,7 @@
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 10:35:15 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/15 17:48:27 by lmorel           ###   ########lyon.fr   */
+/*   Updated: 2022/11/16 17:40:37 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,9 @@ int	ft_lstsize(t_list *lst)
 {
 	int	size;
 
-	size = 0;
+	if (!lst)
+		return (0);
+	size = 1;
 	while (lst->next)
 	{
 		size++;

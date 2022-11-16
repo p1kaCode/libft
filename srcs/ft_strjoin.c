@@ -6,7 +6,7 @@
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 15:25:22 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/15 16:19:42 by lmorel           ###   ########lyon.fr   */
+/*   Updated: 2022/11/16 17:52:55 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*p;
 	size_t	tomalloc;
 
+	if (!s1 || !s2)
+		return (NULL);
 	tomalloc = ft_strlen(s1) + ft_strlen(s2);
 	p = malloc(tomalloc * sizeof(char) + 1);
 	if (p == NULL)

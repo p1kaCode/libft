@@ -6,7 +6,7 @@
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 16:47:07 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/15 16:18:39 by lmorel           ###   ########lyon.fr   */
+/*   Updated: 2022/11/16 15:28:29 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	char	*p;
 	char	*s;
 
+	if (!dst && !src)
+		return (NULL);
 	i = 0;
 	p = dst;
 	s = (char *)src;
