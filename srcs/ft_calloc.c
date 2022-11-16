@@ -6,7 +6,7 @@
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 14:10:56 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/15 18:47:56 by lmorel           ###   ########lyon.fr   */
+/*   Updated: 2022/11/16 19:14:27 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,9 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	void	*p;
 
-	p = malloc(count * size);
+	p = (void *)malloc(count * size);
 	if (p == NULL)
 		return (NULL);
-	else
-		ft_bzero(p, size * count);
+	ft_bzero(p, count);
 	return (p);
 }
