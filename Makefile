@@ -57,7 +57,7 @@ FLAGS = -Wall -Wextra -Werror
 
 RM = rm -rf
 
-.c.o : $(HDRS) Makefile
+%.o : %.c $(HDRS) Makefile
 	$(CC) $(FLAGS) -c $< -o ${<:.c=.o}
 
 all : $(NAME)
