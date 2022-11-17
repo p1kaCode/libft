@@ -6,7 +6,7 @@
 /*   By: lmorel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 16:50:25 by lmorel            #+#    #+#             */
-/*   Updated: 2022/11/17 13:37:31 by lmorel           ###   ########lyon.fr   */
+/*   Updated: 2022/11/17 15:46:09 by lmorel           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,17 @@ int	count_nb_words(const char *s, char c)
 	return (nb_words);
 }
 
+char	**free_tab(char **strs)
+{
+	int	i;
+
+	i = 0;
+	while (strs[i] != NULL)
+		free(strs[i]);
+	free(strs);
+	return (NULL);
+}
+
 char	**fill_tab(char const *s, char c, char **strs)
 {
 	int	k;
@@ -52,7 +63,7 @@ char	**fill_tab(char const *s, char c, char **strs)
 		{
 			strs[k] = ft_substr(s, prev_i, i - prev_i);
 			if (!strs[k])
-				return (NULL);
+				return (free_tab(strs));
 		}
 		k++;
 	}
