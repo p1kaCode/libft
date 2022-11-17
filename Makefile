@@ -57,15 +57,15 @@ FLAGS = -Wall -Wextra -Werror
 
 RM = rm -rf
 
-.c.o :
+.c.o : $(HDRS) Makefile
 	$(CC) $(FLAGS) -c $< -o ${<:.c=.o}
 
 all : $(NAME)
 
-$(NAME) : $(OBJS) $(HDRS)
+$(NAME) : $(OBJS)
 	ar rcs $(NAME) $(OBJS) $(HDRS)
 
-bonus : $(OBJS) $(BNS) $(HDRS)
+bonus : $(OBJS) $(BNS)
 	ar rcs $(NAME) $(OBJS) $(BNS) $(HDRS)
 
 clean :
